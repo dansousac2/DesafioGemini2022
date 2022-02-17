@@ -15,7 +15,7 @@ public class AnagramaPar { // Questão 3
 
 	/**
 	 * 
-	 * @param String palavra base para anagramas pares
+	 * @param palavra base para anagramas pares
 	 * @return <b>int</b> quantidade de anagramas pares encontrados.
 	 * @author Danilo
 	 */

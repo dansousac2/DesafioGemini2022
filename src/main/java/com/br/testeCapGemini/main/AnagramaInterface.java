@@ -4,6 +4,11 @@ import javax.swing.JOptionPane;
 
 import com.br.testeCapGemini.model.AnagramaPar;
 
+/**
+ * Executa a lógica requisita pelo problema do anagrama
+ * @author Danilo
+ *
+ */
 public class AnagramaInterface {
 
 	public static void main(String[] args) {

@@ -4,7 +4,7 @@ import com.br.testeCapGemini.service.Verificacao;
 
 /**
  * Classe que implementa a interface {@link Verificacao}, responsável por verificar a existência de caracteres
- * especiais (<b>!@#$%^&*()-+</b>)
+ * especiais <b>"!@#$%^&*()-+"</b> (sem aspas)
  * @author Danilo
  * @since fev 2022
  * @version 1.0

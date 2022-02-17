@@ -10,6 +10,7 @@ public class Triangulo { //Questão 1
 
 	/**
 	 * Cria uma figura utilizando asteriscos (*) com a quantidade de níveis (altura) utilizando o atributo altura
+	 * @param h altura do triângulo
 	 * @return figura formada (String)
 	 * @author Danilo
 	 */

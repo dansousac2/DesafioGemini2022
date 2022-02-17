@@ -37,7 +37,7 @@ public class SenhaSegura { // Questão 2
 	
 	/**
 	 * 
-	 * @param String senha pretendida
+	 * @param senha pretendida
 	 * @return <b>int</b> quantidade de dígitos que faltam para que a senha seja considerada segura
 	 */
 	public int verificarSenha(String senha) {

@@ -4,6 +4,11 @@ import javax.swing.JOptionPane;
 
 import com.br.testeCapGemini.model.SenhaSegura;
 
+/**
+ * Interface que realiaz a lógica requisita pelo problema de segurança de senha
+ * @author Danilo
+ *
+ */
 public class SenhaSeguraInterface { // Questão 2
 
 	public static void main(String[] args) {
