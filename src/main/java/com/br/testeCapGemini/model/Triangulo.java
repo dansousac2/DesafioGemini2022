@@ -8,39 +8,28 @@ package com.br.testeCapGemini.model;
  */
 public class Triangulo { //Questão 1
 
-	private int altura;
-
-	/**
-	 * Construtor default que recebe a quantidade de níveis que a figura irá ter
-	 * @param altura informada (int)
-	 * @author Danilo
-	 */
-	public Triangulo(int altura) {
-		this.altura = altura;
-	}
-
 	/**
 	 * Cria uma figura utilizando asteriscos (*) com a quantidade de níveis (altura) utilizando o atributo altura
 	 * @return figura formada (String)
 	 * @author Danilo
 	 */
-	public String criarTriangulo() {
+	public String criarTriangulo(int h) {
 		String concat = "";
 			
-		if(altura == 1) {
+		if(h == 1) {
 			concat = "*";
 			return concat;
 		}
 		
-		if(altura < 1) {
+		if(h < 1) {
 			concat = "Não é possível criar a ilustração com o 'n' informado";
 			return concat;
 		}
 		
-		for(int i = 1; i < altura; i++) {
+		for(int i = 1; i < h; i++) {
 			String asteriscos = "";
 			
-			for(int e = i; e < altura; e++) {
+			for(int e = i; e < h; e++) {
 				asteriscos += " ";
 			}
 			
@@ -53,7 +42,7 @@ public class Triangulo { //Questão 1
 		}
 		
 		String ultimoNivel = "";
-		for(int i = altura; i > 0; i--) {
+		for(int i = h; i > 0; i--) {
 			ultimoNivel += "*";
 		}
 		

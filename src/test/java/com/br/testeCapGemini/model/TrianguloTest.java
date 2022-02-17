@@ -25,9 +25,9 @@ class TrianguloTest {
 	 */
 	@Test
 	public void criaFiguraComNNiveis() {
-		Triangulo tri = new Triangulo(4);
+		Triangulo tri = new Triangulo();
 		
-		String result = tri.criarTriangulo();
+		String result = tri.criarTriangulo(4);
 		
 		String manual = "   *\n  **\n ***\n****";
 				

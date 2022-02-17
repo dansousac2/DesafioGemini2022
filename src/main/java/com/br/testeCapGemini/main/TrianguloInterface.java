@@ -1,0 +1,21 @@
+package com.br.testeCapGemini.main;
+
+import javax.swing.JOptionPane;
+
+import com.br.testeCapGemini.model.Triangulo;
+
+public class TrianguloInterface { // Questão 1
+
+	public static void main(String[] args) {
+		
+		Triangulo tri = new Triangulo();
+		
+		int altura = Integer.parseInt(JOptionPane.showInputDialog("Informe a altura do triângulo: "));
+		
+		System.out.println(tri.criarTriangulo(altura));
+		
+		JOptionPane.showMessageDialog(null, "Verifique a saída no console!","Repesentação:"
+				,JOptionPane.WARNING_MESSAGE);
+		
+	}
+}
