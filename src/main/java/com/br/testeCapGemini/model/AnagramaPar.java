@@ -4,34 +4,56 @@ import java.util.ArrayList;
 
 public class AnagramaPar { // Questão 3
 
+	ArrayList<String> anagramasEncontrados = new ArrayList<>();
+
 	public int calcularQtd(String palavra) {
 		int anagramasPares = 0;
 
 		char[] letrasDaPalavra = palavra.toCharArray();
-		ArrayList<String> anagramasEncontrados = new ArrayList<>();
 
+		int index = 0;
 		for (char c : letrasDaPalavra) {
+
+			if (!(index < palavra.length() - 1)) {
+				break;
+			}
+			
 			String s = String.valueOf(c);
-			int index = 0;
+			String sub = palavra.substring(index + 1);
 
-			while (index < palavra.length() - 1) {
-				String sub = palavra.substring(index + 1);
-				
-				if (s.matches(sub)) {
-					
-					if (!anagramasEncontrados.contains(s)) {
-						anagramasPares++;
-						anagramasEncontrados.add(s);
+			String subPreparada = "[" + sub + "]"; // expressão regular formada (exreg)
+			if (s.matches(subPreparada)) {
 
-						int indexMatch = 
+				if (!isAnagramaNoArray(s)) {
+					anagramasPares++;
+					anagramasEncontrados.add(s);
+
+					int indexMatch = sub.indexOf(s);
+					if (indexMatch > 0) {
+						String novaSub = palavra.substring(index, indexMatch + 1);
+						if (!isAnagramaNoArray(novaSub)) {
+							anagramasPares++;
+							anagramasEncontrados.add(novaSub);
+
+							String parNovaSub = palavra.substring(index + 1, indexMatch + 2);
+							anagramasEncontrados.add(parNovaSub);
+						}
 					}
 				}
-				
-				index++;
 			}
+
+			index++;
+
 		}
 
 		return anagramasPares;
+	}
+
+	private boolean isAnagramaNoArray(String s) {
+		if (anagramasEncontrados.contains(s)) {
+			return true;
+		}
+		return false;
 	}
 
 }
