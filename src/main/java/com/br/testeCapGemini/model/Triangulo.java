@@ -1,13 +1,29 @@
 package com.br.testeCapGemini.model;
 
+/**
+ * Classe responsável por criar figuras que se assemelham a triângulos utilizando asteriscos (*)
+ * @author Danilo
+ * @since fev 2022
+ * @version 1.0
+ */
 public class Triangulo { //Questão 1
 
 	private int altura;
 
+	/**
+	 * Construtor default que recebe a quantidade de níveis que a figura irá ter
+	 * @param altura informada (int)
+	 * @author Danilo
+	 */
 	public Triangulo(int altura) {
 		this.altura = altura;
 	}
 
+	/**
+	 * Cria uma figura utilizando asteriscos (*) com a quantidade de níveis (altura) utilizando o atributo altura
+	 * @return figura formada (String)
+	 * @author Danilo
+	 */
 	public String criarTriangulo() {
 		String concat = "";
 			

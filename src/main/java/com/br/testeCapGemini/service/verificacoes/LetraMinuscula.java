@@ -2,8 +2,19 @@ package com.br.testeCapGemini.service.verificacoes;
 
 import com.br.testeCapGemini.service.Verificacao;
 
+/**
+ * Classe que implementa a interface {@link Verificacao}, responsável porverificar a existência de caracter
+ * <b>maiúsculo</b> na senha pretendida
+ * @author Danilo
+ * @since fev 2022
+ * @version 1.0
+ */
 public class LetraMinuscula implements Verificacao {
 
+	/**
+	 * Verifica a existência de ao menos 1 (um) caracter de letra minúscula na senha pretendida
+	 * @author Danilo
+	 */
 	public int verificar(String senha) {
 		char[] caracteres = senha.toCharArray();
 		

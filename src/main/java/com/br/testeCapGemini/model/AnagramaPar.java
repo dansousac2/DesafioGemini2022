@@ -2,10 +2,23 @@ package com.br.testeCapGemini.model;
 
 import java.util.ArrayList;
 
+/**
+ * <b>AnagramaPar</b> é uma classe que permite encontrar "anagramas pares" em uma determinada palavra
+ * @author Danilo
+ * @since fev de 2022
+ * @version 1.0
+ */
+
 public class AnagramaPar { // Questão 3
 
 	ArrayList<String> anagramasEncontrados = new ArrayList<>();
 
+	/**
+	 * 
+	 * @param String palavra base para anagramas pares
+	 * @return <b>int</b> quantidade de anagramas pares encontrados.
+	 * @author Danilo
+	 */
 	public int calcularQtd(String palavra) {
 		int anagramasPares = 0;
 
@@ -48,7 +61,12 @@ public class AnagramaPar { // Questão 3
 
 		return anagramasPares;
 	}
-
+	/**
+	 * Método privado para verificar existência de uma palavra no array de anagramas pares
+	 * @param palavra a ser pesquisada
+	 * @return verdadeiro ou falso, para se está no Array de anagramas encontrados
+	 * @author Danilo
+	 */
 	private boolean isAnagramaNoArray(String s) {
 		if (anagramasEncontrados.contains(s)) {
 			return true;
