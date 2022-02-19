@@ -18,9 +18,11 @@ public class TrianguloInterface { // Questão 1
 		
 		int altura = Integer.parseInt(JOptionPane.showInputDialog("Informe a altura do triângulo: "));
 		
-		System.out.println(tri.criarTriangulo(altura));
+		String figura = tri.criarTriangulo(altura);
 		
-		JOptionPane.showMessageDialog(null, "Verifique a saída no console!","Repesentação:"
+		System.out.println(figura);
+		
+		JOptionPane.showMessageDialog(null, figura + "\n\nVerifique a saída no console!","Repesentação:"
 				,JOptionPane.WARNING_MESSAGE);
 		
 	}
