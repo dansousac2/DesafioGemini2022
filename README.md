@@ -8,6 +8,6 @@
 
 ### Utilizando o projeto java
 
-**Executando:** classes correspondentes aos probelams do desafio est„o localizadas em: **com.br.testeCapGemini.main** deste projeto.
+**Executando:** classes correspondentes aos problemas do desafio est√£o localizadas em: **com.br.testeCapGemini.main** deste projeto.
 
 **Classes teste:** encontram-se em **com.br.testeCapGemini.model**
